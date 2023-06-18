@@ -71,7 +71,7 @@ const cupcakeList = function (data) {
   $(cupcakesDiv).empty();
   $(data).each(function (idx, cupcake) {
     $(cupcakesDiv).append(
-      `<form class="edit-form" id="${cupcake.id}"><div class= "d-flex justify-content-center">
+      `<form class="edit-form" id="${cupcake.id}"><div class="d-flex justify-content-evenly">
         <div class="row m-3 border border-danger border-2 rounded-3 w-50">
             <div class="col"> <h4>Flavor:</h4><span id="cupcake-flavor" class="cupcake-data">${cupcake.flavor}</span>
             <input type="text" class="input-edit form-control mt-2 h-25 ms-1" style="display: none; width: 120px" value="${cupcake.flavor}"></div>
